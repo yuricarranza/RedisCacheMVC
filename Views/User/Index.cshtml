@@ -1,0 +1,17 @@
+﻿@model IEnumerable<RedisTestWebMVC.Models.User>
+<p>@ViewData["Message"]</p>
+<table>
+    <tbody>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
